@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+
+:root {
+    --family: 'Bacasime Antique', serif;
+    --bg: #deefff;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: grey;
+    font-family: var(--family);
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.header input[type="radio"] {
+    display: none;
+
+}
+
+.header label {
+    padding: 25px;
+    background-color: var(--bg);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header .info {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+
+.header .info h2 {
+    font-size: 3em;
+
+}
+
+.header input[type='radio']:checked+label+.info {
+    display: block;
+    cursor: pointer;
+}
+
+.header input[type="radio"]:checked+label {
+    background: #fff;
+    cursor: pointer;
+}
+
+/* music progress bar */
+.music-player {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #ccc;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ff5500;
+    width: 0;
+}
+
+.puthadi {
+    width: 507px;
+}
+
+.bekhayali {
+    width: 350px;
+    padding: 20px;
+    margin-left: 70px;
+}
+
+.shape {
+    width: 510px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.play-pause-button {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://freepngimg.com/thumb/play_button/25623-4-play-button-transparent-background.png');
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 50%;
+
+
+}
+
+.play-pause-button.pause {
+    background-image: url('https://themayanagari.com/wp-content/uploads/2021/03/13-1.jpg');
+}
+
+
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.current-time,
+.duration {
+    color: #333;
+}
+
+@media screen and (max-width:767px) {
+    .puthadi {
+        width: 276px;
+    }
+
+    .bekhayali {
+        width: 270px;
+        padding: 0;
+        margin-left: 0;
+
+    }
+
+    .shape {
+        width: 275px;
+    }
+}
+
+@media (orientation: landscape) {
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin-left: 50px;
+        margin-top: -20px;
+        padding: 10;
+    }
+
+    .puthadi {
+        width: 507px;
+    }
+
+    .bekhayali {
+        width: 270px;
+        padding: 0;
+        margin-left: 30%;
+
+    }
+
+    .shape {
+        width: 510px;
+    }
+
+}
